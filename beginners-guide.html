@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO: title & meta description -->
+  <title>Beginner Stargazer's Guide: Gear, Night Vision & FAQ | Stargazing Atlas</title>
+  <meta name="description" content="Essential field guide for amateur astronomers. Learn dark adaptation rules, red light tricks, binoculars selection, Bortle light pollution scale, and answers to common stargazing FAQs.">
+
+  <!-- SEO: Canonical URL -->
+  <link rel="canonical" href="https://chaytra.github.io/constellations/beginners-guide.html">
+
+  <meta name="author" content="Chaitra">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#060a1a">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Beginner Stargazer's Guide: Gear, Night Vision & FAQ">
+  <meta property="og:description" content="Essential field guide for amateur astronomers: dark adaptation rules, red light torches, binoculars selection, and beginner FAQs.">
+  <meta property="og:url" content="https://chaytra.github.io/constellations/beginners-guide.html">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Beginner Stargazer's Guide: Gear, Night Vision & FAQ">
+  <meta name="twitter:description" content="Essential field guide for amateur astronomers: dark adaptation rules, red light torches, binoculars selection, and beginner FAQs.">
+
+  <!-- Structured Data: FAQPage & Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://chaytra.github.io/constellations/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Stargazer's Field Guide",
+            "item": "https://chaytra.github.io/constellations/beginners-guide.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why do constellations change with the seasons?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Because Earth orbits the Sun, the night side of our planet points towards different sectors of space throughout the year. In winter evenings we face Orion; in summer evenings, we face Scorpius and the Milky Way center."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are the stars in a constellation physically close together?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usually not. They simply align along our line of sight from Earth. One star in a constellation may be 30 light-years away, while its visual neighbour could be 800 light-years distant."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do stars twinkle while planets usually do not?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Stars are so far away that they act as pinpoint points of light, which Earth's turbulent atmosphere easily refracts and jitters. Planets are closer and appear as tiny disks; the atmospheric ripples across a disk average out, creating steady light."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which star is the brightest in the night sky?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sirius (in Canis Major) is the brightest true star visible from Earth with an apparent magnitude of -1.46. While planets like Venus and Jupiter outshine it, they reflect solar light and are not self-luminous stars."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need an expensive telescope to begin stargazing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No! Every major constellation, the Andromeda Galaxy, the Orion Nebula, and the Pleiades can be spotted with the naked eye. A simple pair of 7x50 or 10x50 binoculars provides the most affordable and rewarding upgrade."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between an asterism and a constellation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The International Astronomical Union recognises exactly 88 official constellations that map the entire sky. An asterism is an informal, easily recognisable pattern within or across constellations—like the Big Dipper (part of Ursa Major) or the Summer Triangle."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip" href="#content">Skip to main content</a>
+
+  <!-- Disclaimer & Improvement Banner -->
+  <aside class="notice-banner" aria-label="Site update notice">
+    <div class="wrap notice-inner">
+      <div class="notice-left">
+        <span class="notice-tag">✨ Site In Progress</span>
+        <span>We are actively expanding this guide into a multi-page sky atlas with upcoming interactive maps.</span>
+      </div>
+      <a class="notice-link" href="upcoming.html">See Upcoming Features &rarr;</a>
+    </div>
+  </aside>
+
+  <!-- Global Header & Navigation -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="site-logo" href="index.html" aria-label="Constellations Guide Home">
+        <span>✦</span> Constellations
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation menu">
+        ☰
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Primary site navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="seasons.html">Seasonal Sky</a></li>
+          <li><a href="star-hopping.html">Star-Hopping</a></li>
+          <li><a href="indian-astronomy.html">Indian Astronomy</a></li>
+          <li><a href="beginners-guide.html" aria-current="page">Stargazer's Guide</a></li>
+          <li><a href="upcoming.html">Upcoming Features</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <div class="wrap">
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumbs">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Stargazer's Field Guide & FAQ</li>
+        </ol>
+      </nav>
+
+      <section class="page-hero">
+        <p class="eyebrow">Practical Fieldcraft</p>
+        <h1>Before You Step Outside: The Stargazer's Field Guide</h1>
+        <p class="lede">Observing the night sky requires very little equipment, but understanding the physics of your eyes, light pollution, and timing makes all the difference between seeing a few dozen stars or several thousand.</p>
+        <p class="byline">By Chaitra &middot; <a href="https://www.iiita.ac.in/">IIIT Allahabad</a> &middot; Updated <time datetime="2026-11-13">13 November 2026</time></p>
+      </section>
+
+      <article class="read">
+        <!-- Field Preparation Rules -->
+        <section>
+          <h2>Five Essential Rules for Clear Observing</h2>
+          
+          <h3>1. Respect Your Night Vision (Dark Adaptation)</h3>
+          <p>The human retina relies on the protein <strong>rhodopsin</strong> to detect faint starlight. Full dark adaptation takes <strong>20 to 30 minutes</strong> in complete darkness. A single glance at a white smartphone screen or flashlight instantly bleaches your rhodopsin, resetting your biological clock.</p>
+          <div class="tip">
+            <p><strong>The Red Light Trick:</strong> Human rod cells are insensitive to deep red light. Wrap red cellophane or red electrical tape around a flashlight lens, or enable a red-screen display filter on your phone to read charts safely in the field.</p>
+          </div>
+
+          <h3>2. Understand the Bortle Scale (Escaping Light Pollution)</h3>
+          <p>Astronomer John E. Bortle classified night sky brightness on a 9-class scale:</p>
+          <ul>
+            <li><strong>Class 1–2 (Pristine Dark Sky):</strong> Remote wilderness (e.g., Hanle Ladakh or Spiti Valley). The Milky Way casts visible shadows on the ground; thousands of stars sparkle.</li>
+            <li><strong>Class 4–5 (Rural / Suburban Transition):</strong> Edges of small towns or farm clearings. The Milky Way is clearly visible above 30&deg; altitude; Andromeda galaxy is obvious.</li>
+            <li><strong>Class 7–9 (Inner City & Metropolitan Hubs):</strong> Delhi, Mumbai, Allahabad center. Only bright stars (Sirius, Betelgeuse, Vega) and planets cut through the sky glow.</li>
+          </ul>
+          <p>Even climbing onto a shaded terrace or driving 15 minutes away from highway streetlights noticeably enhances visibility.</p>
+
+          <h3>3. Time Your Nights with the Moon Cycle</h3>
+          <p>A Full Moon is glorious, but its celestial glow acts like a massive streetlamp, washing out faint star clusters and nebulae. Schedule deep-sky constellation viewing during the <strong>New Moon phase</strong> or the crescent moon periods when the sky remains pitch-black after dusk.</p>
+
+          <h3>4. Choosing Your Optical Gear: Binoculars First!</h3>
+          <p>Beginners often rush to purchase expensive telescopes, only to abandon them when setup becomes cumbersome. Start with <strong>7x50 or 10x50 Porro-prism binoculars</strong>:</p>
+          <ul>
+            <li>Wide field of view (5&deg;–7&deg;), making star-hopping intuitive.</li>
+            <li>Portable, zero setup time, and lightweight.</li>
+            <li>Instantly reveals Jupiter's 4 Galilean moons, the craters of our Moon, the jewel-like Pleiades, and the misty Orion Nebula.</li>
+          </ul>
+
+          <h3>5. Stargazing Apps & Digital Aids</h3>
+          <p>Free, open tools help you practice from home before heading outdoors:</p>
+          <ul>
+            <li><a href="https://stellarium-web.org/" target="_blank" rel="noopener">Stellarium Web</a> — Free interactive 3D planetarium in your browser.</li>
+            <li><a href="https://nightsky.jpl.nasa.gov/" target="_blank" rel="noopener">NASA Night Sky Network</a> — Observing checklists, moon calendars, and astronomy club directories.</li>
+          </ul>
+        </section>
+
+        <!-- Comprehensive FAQ -->
+        <section style="margin-top: 3.5rem;">
+          <h2>Frequently Asked Questions</h2>
+          <p>Common questions asked by beginners starting their astronomical journey.</p>
+
+          <details open>
+            <summary>Why do constellations change with the seasons?</summary>
+            <p>Earth orbits the Sun once every 365.25 days. Because our planet's night side constantly faces away from the Sun, the slice of the deep universe we gaze into slowly shifts westward by about 1 degree (4 minutes) each night. In winter evenings we face Orion; in summer evenings, we face Scorpius and the center of the Milky Way.</p>
+          </details>
+
+          <details>
+            <summary>Are the stars in a constellation physically close together?</summary>
+            <p>Usually not! Constellations are two-dimensional optical illusions. For example, in Orion, Betelgeuse is roughly 640 light-years away, Bellatrix is 250 light-years, and Rigel is around 860 light-years away. They appear adjacent only because they lie along our unique terrestrial line of sight.</p>
+          </details>
+
+          <details>
+            <summary>Why do stars twinkle while planets usually do not?</summary>
+            <p>Stars are trillions of kilometers away and appear as mere single points of light. As their light passes through Earth's turbulent atmosphere, fluctuating temperature and density pockets constantly bend the rays, creating a scintillation or "twinkle". Planets are close enough to appear as measurable disks; the fluctuations across the disk cancel each other out, giving steady light.</p>
+          </details>
+
+          <details>
+            <summary>Which star is the brightest?</summary>
+            <p><strong>Sirius</strong> (Mrigavyadha in Sanskrit), located in Canis Major, is the brightest star in the entire night sky with an apparent magnitude of -1.46. While solar system planets like Venus (-4.4) or Jupiter (-2.8) often outshine Sirius, they shine by reflected sunlight and are not self-luminous stars.</p>
+          </details>
+
+          <details>
+            <summary>Do I need an expensive telescope?</summary>
+            <p>No. Every constellation, asterism, and hop highlighted in this guide is visible with the unaided naked eye. A simple pair of binoculars is the most versatile and cost-effective upgrade for any amateur astronomer.</p>
+          </details>
+
+          <details>
+            <summary>What is the difference between an asterism and a constellation?</summary>
+            <p>A <strong>constellation</strong> is one of 88 officially demarcated regions of the celestial sphere formally recognized by the International Astronomical Union (IAU). An <strong>asterism</strong> is an informal, easily recognizable grouping of stars that may be part of a constellation (e.g., the Big Dipper within Ursa Major) or cross multiple constellations (e.g., the Summer Triangle formed by stars from Cygnus, Lyra, and Aquila).</p>
+          </details>
+        </section>
+
+        <!-- Roadmap Link Callout -->
+        <div class="tip success" style="margin-top: 3rem;">
+          <p><strong>Upcoming Feature in Development:</strong> We are building an interactive Moon Phase & Stargazing Calendar widget to help plan observations automatically! <a href="upcoming.html">Check our Roadmap &rarr;</a></p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>About This Project</h4>
+          <p>An accessible astronomical guide built by Chaitra for the Digital Marketing practical at <a href="https://www.iiita.ac.in/">IIIT Allahabad</a>. Designed for zero-bloat speed, high contrast, and educational discovery.</p>
+          <p><span class="notice-tag">Notice</span> Site under active enhancement. <a href="upcoming.html">Read our roadmap</a>.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="seasons.html">Seasonal Sky</a></li>
+            <li><a href="star-hopping.html">Star-Hopping Tricks</a></li>
+            <li><a href="indian-astronomy.html">Indian Astronomy</a></li>
+            <li><a href="beginners-guide.html">Stargazer's Field Guide</a></li>
+            <li><a href="upcoming.html">Upcoming Features</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="https://stellarium-web.org/" target="_blank" rel="noopener">Stellarium Sky Map</a></li>
+            <li><a href="https://nightsky.jpl.nasa.gov/" target="_blank" rel="noopener">NASA Night Sky</a></li>
+            <li><a href="sitemap.xml">XML Sitemap</a></li>
+            <li><a href="robots.txt">Robots.txt</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Chaitra &middot; IIIT Allahabad. Star charts are simplified schematics.</p>
+        <p><a href="#content">Back to top &uarr;</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (toggle && nav) {
+        toggle.addEventListener('click', function() {
+          var open = nav.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

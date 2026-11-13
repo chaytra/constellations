@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO: title & meta description -->
+  <title>Seasonal Sky Guide: Constellations by Season | Stargazing Atlas</title>
+  <meta name="description" content="Explore constellations visible across Winter, Spring, Summer, and Autumn evenings. Interactive seasonal sky guide with star hopping landmarks and Indian Nakshatra names.">
+
+  <!-- SEO: Canonical URL -->
+  <link rel="canonical" href="https://chaytra.github.io/constellations/seasons.html">
+
+  <meta name="author" content="Chaitra">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#060a1a">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Seasonal Sky Guide: Constellations by Season">
+  <meta property="og:description" content="Discover evening constellations for Winter, Spring, Summer, and Autumn with interactive filters and Indian astronomical names.">
+  <meta property="og:url" content="https://chaytra.github.io/constellations/seasons.html">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Seasonal Sky Guide: Constellations by Season">
+  <meta name="twitter:description" content="Discover evening constellations for Winter, Spring, Summer, and Autumn with interactive filters and Indian astronomical names.">
+
+  <!-- Structured Data: Article & Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://chaytra.github.io/constellations/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Seasonal Sky Guide",
+            "item": "https://chaytra.github.io/constellations/seasons.html"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "headline": "Seasonal Sky Guide: Discover Constellations Throughout the Year",
+        "description": "An interactive seasonal guide detailing key constellations visible in the evening sky across northern latitudes and India.",
+        "author": { "@type": "Person", "name": "Chaitra" },
+        "datePublished": "2026-11-10",
+        "dateModified": "2026-11-13",
+        "inLanguage": "en",
+        "mainEntityOfPage": "https://chaytra.github.io/constellations/seasons.html"
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip" href="#content">Skip to main content</a>
+
+  <!-- Disclaimer & Improvement Banner -->
+  <aside class="notice-banner" aria-label="Site update notice">
+    <div class="wrap notice-inner">
+      <div class="notice-left">
+        <span class="notice-tag">✨ Site In Progress</span>
+        <span>We are actively expanding this guide into a multi-page sky atlas with upcoming interactive maps.</span>
+      </div>
+      <a class="notice-link" href="upcoming.html">See Upcoming Features &rarr;</a>
+    </div>
+  </aside>
+
+  <!-- Global Header & Navigation -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="site-logo" href="index.html" aria-label="Constellations Guide Home">
+        <span>✦</span> Constellations
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation menu">
+        ☰
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Primary site navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="seasons.html" aria-current="page">Seasonal Sky</a></li>
+          <li><a href="star-hopping.html">Star-Hopping</a></li>
+          <li><a href="indian-astronomy.html">Indian Astronomy</a></li>
+          <li><a href="beginners-guide.html">Stargazer's Guide</a></li>
+          <li><a href="upcoming.html">Upcoming Features</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <div class="wrap">
+      <!-- Breadcrumb navigation -->
+      <nav class="breadcrumbs" aria-label="Breadcrumbs">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Seasonal Sky Guide</li>
+        </ol>
+      </nav>
+
+      <section class="page-hero">
+        <p class="eyebrow">Constellation Atlas</p>
+        <h1>The Sky by Season: A Year-Round Tour</h1>
+        <p class="lede">Because Earth orbits the Sun, the night side of our planet points towards different depths of the cosmos through the seasons. Use the interactive filters below to discover what shines brightest right now.</p>
+        <p class="byline">By Chaitra &middot; <a href="https://www.iiita.ac.in/">IIIT Allahabad</a> &middot; Updated <time datetime="2026-11-13">13 November 2026</time></p>
+      </section>
+
+      <!-- Seasonal Filter Controls -->
+      <section aria-labelledby="filter-title">
+        <h2 id="filter-title" style="margin-top: 1rem;">Filter Constellations by Season</h2>
+        <p class="read">Select a season to filter visible constellations. All landmarks listed are chosen for prime evening visibility from northern latitudes, including all of India.</p>
+        
+        <div id="filters" role="group" aria-label="Filter constellations by season"></div>
+        <p id="count" class="read" aria-live="polite" style="font-size:.92rem; color:var(--muted); margin-top:.5rem;"></p>
+
+        <!-- Constellation Cards -->
+        <ul class="cards" id="cards">
+          <!-- WINTER -->
+          <li class="card" data-season="Winter">
+            <span class="season">Winter</span>
+            <h3>Orion (The Hunter)</h3>
+            <p>Look for three bright stars in a short, straight row: Orion's belt. Reddish Betelgeuse marks the right shoulder, and blue-white Rigel shines at the foot. Just below the belt hangs the Orion Nebula (M42), a radiant stellar nursery visible to the unaided eye.</p>
+            <p class="in"><strong>Indian Astronomy:</strong> Orion's head stars form <em>Mrigashira</em>, and Betelgeuse is the stormy star <em>Ardra</em> (associated with Rudra).</p>
+          </li>
+
+          <li class="card" data-season="Winter">
+            <span class="season">Winter</span>
+            <h3>Taurus (The Bull)</h3>
+            <p>Extend Orion's belt up and to the right to reach fierce orange Aldebaran, the eye of the bull. A short hop further brings you to the Pleiades (Seven Sisters), a breathtaking open cluster that resembles a miniature dipper.</p>
+            <p class="in"><strong>Indian Astronomy:</strong> The Pleiades represent <em>Krittika</em>, and Aldebaran is <em>Rohini</em>, two prominent Nakshatras.</p>
+          </li>
+
+          <li class="card" data-season="Winter">
+            <span class="season">Winter</span>
+            <h3>Canis Major (The Greater Dog)</h3>
+            <p>Follow Orion's belt downwards and to the left to reach <strong>Sirius</strong>, the brightest individual star in the entire night sky. Shimmering in iridescent flashes through atmospheric refraction, it commands the winter horizon.</p>
+            <p class="in"><strong>Indian Astronomy:</strong> Sirius is celebrated as <em>Mrigavyadha</em> (the deer hunter) or <em>Lubdhaka</em>.</p>
+          </li>
+
+          <li class="card" data-season="Winter">
+            <span class="season">Winter</span>
+            <h3>Gemini (The Twins)</h3>
+            <p>Hovering northeast of Orion are the twin stars Castor and Pollux. Pollux shines with a warm golden hue, while Castor is a complex six-star multiple system visible as a binary through modest telescopes.</p>
+            <p class="in"><strong>Indian Astronomy:</strong> Known as <em>Punarvasu</em>, symbolizing renewal and return of light.</p>
+          </li>
+
+          <!-- SPRING -->
+          <li class="card" data-season="Spring">
+            <span class="season">Spring</span>
+            <h3>Ursa Major (The Great Bear)</h3>
+            <p>The iconic Big Dipper rides high overhead on spring evenings. Follow the outer bowl pointer stars to locate Polaris. Look closely at Mizar in the handle to test your eyesight on its companion star Alcor.</p>
+            <p class="in"><strong>Indian Astronomy:</strong> Revered as the <em>Saptarishi</em> (Seven Sages); Mizar and Alcor are <em>Vasishtha</em> and <em>Arundhati</em>.</p>
+          </li>
+
+          <li class="card" data-season="Spring">
+            <span class="season">Spring</span>
+            <h3>Leo (The Lion)</h3>
+            <p>Recognizable by the "Sickle" asterism—a backward question mark crowned by brilliant blue-white Regulus. A graceful triangle of stars to the east outlines the lion's body and tail (Denebola).</p>
+            <p class="in"><strong>Indian Astronomy:</strong> Regulus represents <em>Magha</em> ("the mighty one"), associated with ancestral wisdom.</p>
+          </li>
+
+          <li class="card" data-season="Spring">
+            <span class="season">Spring</span>
+            <h3>Boötes (The Herdsman)</h3>
+            <p>Follow the graceful arc of the Big Dipper's handle southwards to spot Arcturus, a blazing orange-red giant star and the fourth-brightest star in the sky.</p>
+            <p class="in"><strong>Indian Astronomy:</strong> Arcturus corresponds to <em>Swati</em>, celebrated for its solitary radiance.</p>
+          </li>
+
+          <!-- SUMMER -->
+          <li class="card" data-season="Summer">
+            <span class="season">Summer</span>
+            <h3>Scorpius (The Scorpion)</h3>
+            <p>One of the few constellations that genuinely looks like its namesake. Featuring a long curved stinger tail and ruby-red supergiant Antares (the "heart of the scorpion") hanging low on the southern horizon from India.</p>
+            <p class="in"><strong>Indian Astronomy:</strong> Antares is known as <em>Jyeshtha</em> ("the senior or eldest").</p>
+          </li>
+
+          <li class="card" data-season="Summer">
+            <span class="season">Summer</span>
+            <h3>Cygnus & The Summer Triangle</h3>
+            <p>Cygnus (The Swan) flies along the Milky Way with blue-white Deneb at its tail. Together with Vega (in Lyra) and Altair (in Aquila), these three luminous stars dominate high overhead throughout monsoon and summer nights.</p>
+            <p class="in"><strong>Indian Astronomy:</strong> Vega is <em>Abhijit</em> and Altair is <em>Shravana</em>, integral to traditional calendar reckoning.</p>
+          </li>
+
+          <li class="card" data-season="Summer">
+            <span class="season">Summer</span>
+            <h3>Sagittarius (The Archer)</h3>
+            <p>Prominently shaped like a "Teapot", Sagittarius points straight towards the supermassive black hole at the center of our Milky Way galaxy, surrounded by rich star fields and nebulae.</p>
+            <p class="in"><strong>Indian Astronomy:</strong> Encompasses the Nakshatras <em>Mula</em> and <em>Purva Ashadha</em>.</p>
+          </li>
+
+          <!-- AUTUMN -->
+          <li class="card" data-season="Autumn">
+            <span class="season">Autumn</span>
+            <h3>Cassiopeia (The Queen)</h3>
+            <p>A striking zigzag "W" or "M" formation of five bright stars wheeling opposite the Big Dipper. It provides an infallible navigational aid when the Dipper is too low to see.</p>
+            <p class="in"><strong>Indian Astronomy:</strong> Traditionally viewed as <em>Sharmishtha</em> in classical starlore.</p>
+          </li>
+
+          <li class="card" data-season="Autumn">
+            <span class="season">Autumn</span>
+            <h3>Pegasus & Andromeda</h3>
+            <p>The prominent Great Square of Pegasus spans autumn skies. Hopping off the northeastern corner leads to Andromeda and M31—the Andromeda Galaxy, visible as a gentle oval mist 2.5 million light-years away.</p>
+            <p class="in"><strong>Indian Astronomy:</strong> Star pairs in Pegasus correspond to <em>Purva Bhadrapada</em> and <em>Uttara Bhadrapada</em>.</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Season Overview Breakdown -->
+      <section class="read" style="margin-top: 3rem;">
+        <h2>How the Celestial Clockwork Works</h2>
+        <p>Because Earth completes a 360-degree orbit around the Sun every 365.25 days, the stars rise approximately <strong>4 minutes earlier each night</strong>. Over 30 days, that translates to a two-hour shift in the sky.</p>
+        
+        <div class="tip">
+          <p><strong>Observer's Tip:</strong> If you spot a constellation at 10:00 PM in November, it will occupy roughly that same position at 8:00 PM in December, and at 6:00 PM in January!</p>
+        </div>
+
+        <p>Ready to locate these stars with your own eyes? Master the navigational steps in our step-by-step star-hopping guide.</p>
+        <p><a class="btn" href="star-hopping.html">Master Star-Hopping Tricks &rarr;</a></p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>About This Project</h4>
+          <p>An accessible astronomical guide built by Chaitra for the Digital Marketing practical at <a href="https://www.iiita.ac.in/">IIIT Allahabad</a>. Designed for zero-bloat speed, high contrast, and educational discovery.</p>
+          <p><span class="notice-tag">Notice</span> Site under active enhancement. <a href="upcoming.html">Read our roadmap</a>.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="seasons.html">Seasonal Sky</a></li>
+            <li><a href="star-hopping.html">Star-Hopping Tricks</a></li>
+            <li><a href="indian-astronomy.html">Indian Astronomy</a></li>
+            <li><a href="beginners-guide.html">Stargazer's Field Guide</a></li>
+            <li><a href="upcoming.html">Upcoming Features</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="https://stellarium-web.org/" target="_blank" rel="noopener">Stellarium Sky Map</a></li>
+            <li><a href="https://nightsky.jpl.nasa.gov/" target="_blank" rel="noopener">NASA Night Sky</a></li>
+            <li><a href="sitemap.xml">XML Sitemap</a></li>
+            <li><a href="robots.txt">Robots.txt</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Chaitra &middot; IIIT Allahabad. Star charts are simplified schematics.</p>
+        <p><a href="#content">Back to top &uarr;</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: Mobile Navigation & Season Filter -->
+  <script>
+    // Mobile navigation toggle
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (toggle && nav) {
+        toggle.addEventListener('click', function() {
+          var open = nav.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+      }
+    })();
+
+    // Progressive enhancement: Season filtering
+    (function () {
+      var bar = document.getElementById('filters');
+      var cards = Array.prototype.slice.call(document.querySelectorAll('#cards .card'));
+      var count = document.getElementById('count');
+      if (!bar || !cards.length) return;
+
+      var seasons = ['All', 'Winter', 'Spring', 'Summer', 'Autumn'];
+      seasons.forEach(function (name, i) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.textContent = name;
+        b.setAttribute('aria-pressed', i === 0 ? 'true' : 'false');
+        b.addEventListener('click', function () {
+          Array.prototype.forEach.call(bar.children, function (x) { x.setAttribute('aria-pressed', 'false'); });
+          b.setAttribute('aria-pressed', 'true');
+          var shown = 0;
+          cards.forEach(function (c) {
+            var show = (name === 'All') || (c.getAttribute('data-season') === name);
+            c.hidden = !show;
+            if (show) shown++;
+          });
+          count.textContent = 'Showing ' + shown + (shown === 1 ? ' constellation' : ' constellations') + 
+            (name === 'All' ? ' across all seasons' : ' for ' + name.toLowerCase() + ' evenings') + '.';
+        });
+        bar.appendChild(b);
+      });
+
+      count.textContent = 'Showing ' + cards.length + ' constellations across all seasons.';
+    })();
+  </script>
+</body>
+</html>
