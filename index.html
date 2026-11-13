@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-site-verification" content="iyhZXMmR2uqv8rZ5uBnTymKC-4VpJ-STUVbe1eW-dkU" />
 
   <!-- SEO: title (~50-60 chars), main phrase first -->
   <title>Constellations for Beginners: Spot Them in the Night Sky</title>
@@ -19,180 +18,90 @@
   <meta name="theme-color" content="#060a1a">
 
   <!-- Open Graph + Twitter: preview when the link is shared -->
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Constellations for Beginners: Spot Them in the Night Sky">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lost in the Stars? A Beginner’s Guide to Reading the Night Sky">
   <meta property="og:description" content="Find Orion, the Big Dipper and Polaris, with a seasonal sky guide and Indian star names.">
   <meta property="og:url" content="https://chaytra.github.io/constellations/">
   <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Lost in the Stars? A Beginner’s Guide to Reading the Night Sky">
+  <meta name="twitter:description" content="Find Orion, the Big Dipper and Polaris, with a seasonal sky guide and Indian star names.">
 
   <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Constellations for Beginners: Spot Them in the Night Sky",
-    "description": "A beginner stargazing guide to finding constellations, with a seasonal sky guide and Indian star names.",
-    "author": { "@type": "Person", "name": "Chaitra" },
-    "datePublished": "2026-11-10",
-    "inLanguage": "en",
-    "about": "Constellations",
-    "mainEntityOfPage": "https://chaytra.github.io/constellations/"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Constellations for Beginners",
+        "url": "https://chaytra.github.io/constellations/",
+        "description": "A beginner stargazing guide to finding constellations, seasonal skies, and traditional Indian star names."
+      },
+      {
+        "@type": "Article",
+        "headline": "Lost in the Stars? A Beginner’s Guide to Reading the Night Sky",
+        "description": "A beginner stargazing guide to finding constellations, with a seasonal sky guide and Indian star names.",
+        "author": { "@type": "Person", "name": "Chaitra" },
+        "datePublished": "2026-11-10",
+        "dateModified": "2026-11-13",
+        "inLanguage": "en",
+        "about": "Constellations",
+        "mainEntityOfPage": "https://chaytra.github.io/constellations/"
+      }
+    ]
   }
   </script>
 
-  <!-- ANALYTICS (Phase 2): paste Microsoft Clarity and GA4 snippets here -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "zbkzgswgj6");
-</script>
-
-  <style>
-    :root {
-      --ink: #e9ecf8;
-      --muted: #aab3d1;
-      --night: #060a1a;
-      --deep: #0d1433;
-      --line: rgba(170, 179, 209, .25);
-      --gold: #f2c96b;
-      --ice: #a9c8ff;
-      --card: rgba(255, 255, 255, .05);
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      color: var(--ink);
-      background: linear-gradient(180deg, var(--night) 0%, var(--deep) 55%, #141b45 100%) fixed;
-      font: 17px/1.7 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-    }
-    /* Star-field: two layers of tiny dots; the second one twinkles */
-    body::before, body::after {
-      content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
-    }
-    body::before {
-      background-image:
-        radial-gradient(1.2px 1.2px at 8% 12%, #fff 50%, transparent 52%),
-        radial-gradient(1px 1px at 23% 61%, #fff 50%, transparent 52%),
-        radial-gradient(1.4px 1.4px at 37% 28%, #fff 50%, transparent 52%),
-        radial-gradient(1px 1px at 52% 83%, #fff 50%, transparent 52%),
-        radial-gradient(1.2px 1.2px at 66% 46%, #fff 50%, transparent 52%),
-        radial-gradient(1px 1px at 79% 14%, #fff 50%, transparent 52%),
-        radial-gradient(1.4px 1.4px at 91% 70%, #fff 50%, transparent 52%),
-        radial-gradient(1px 1px at 14% 90%, #fff 50%, transparent 52%);
-      background-size: 480px 480px;
-      opacity: .75;
-    }
-    body::after {
-      background-image:
-        radial-gradient(1.6px 1.6px at 17% 38%, var(--gold) 50%, transparent 52%),
-        radial-gradient(1.6px 1.6px at 44% 72%, var(--ice) 50%, transparent 52%),
-        radial-gradient(1.6px 1.6px at 73% 25%, #fff 50%, transparent 52%),
-        radial-gradient(1.6px 1.6px at 88% 88%, var(--gold) 50%, transparent 52%);
-      background-size: 610px 610px;
-      animation: twinkle 5s ease-in-out infinite alternate;
-    }
-    @keyframes twinkle { from { opacity: .25; } to { opacity: 1; } }
-    @media (prefers-reduced-motion: reduce) {
-      body::after { animation: none; opacity: .7; }
-      html { scroll-behavior: auto; }
-      .tw { animation: none !important; }
-    }
-
-    h1, h2, h3 { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif; font-weight: 600; line-height: 1.2; }
-    .wrap { max-width: 60rem; margin: 0 auto; padding: 0 1.25rem; }
-    .read { max-width: 42rem; }
-    a { color: var(--gold); text-underline-offset: 3px; }
-    a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--ice); outline-offset: 3px; }
-    .skip { position: absolute; left: -999px; }
-    .skip:focus { left: 1rem; top: 1rem; background: var(--gold); color: #000; padding: .5rem .75rem; z-index: 10; }
-
-    /* Hero */
-    header { padding: 3rem 0 2rem; }
-    .hero { display: grid; gap: 2rem; align-items: center; grid-template-columns: 1fr; }
-    @media (min-width: 52rem) { .hero { grid-template-columns: 1.15fr .85fr; } }
-    .eyebrow { font: 600 .8rem system-ui, sans-serif; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); margin: 0 0 .75rem; }
-    h1 { font-size: clamp(2.1rem, 6vw, 3.4rem); margin: 0 0 1rem; letter-spacing: -.01em; }
-    .lede { font-size: 1.15rem; color: var(--muted); margin: 0; }
-    .byline { font-size: .88rem; color: var(--muted); margin-top: 1.25rem; }
-
-    /* In-page nav */
-    nav[aria-label="On this page"] { border-block: 1px solid var(--line); padding: .5rem 0; margin-bottom: 1rem; }
-    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .1rem 1.4rem; font-size: .92rem; }
-    nav a { display: inline-block; padding: .35rem 0; }
-
-    h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); margin: 3.5rem 0 .5rem; }
-    h3 { font-size: 1.2rem; margin: 0 0 .25rem; }
-    p { margin: .8rem 0; }
-
-    figure { margin: 1.75rem 0; }
-    figure svg { width: 100%; height: auto; display: block; }
-    figcaption { font-size: .86rem; color: var(--muted); margin-top: .5rem; }
-    .chart { background: rgba(4, 7, 20, .55); border: 1px solid var(--line); border-radius: 14px; padding: .5rem; }
-    .ln { stroke: var(--ice); stroke-width: 1.4; stroke-opacity: .7; fill: none; }
-    .ln.dash { stroke: var(--gold); stroke-dasharray: 5 5; stroke-opacity: .9; }
-    .st { fill: #fff; }
-    .lab { font: 500 11.5px system-ui, sans-serif; fill: var(--muted); }
-    .lab.hi { fill: var(--gold); }
-    .tw { animation: pulse 3.5s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: center; }
-    .tw:nth-of-type(2n) { animation-delay: -1.2s; }
-    .tw:nth-of-type(3n) { animation-delay: -2.4s; }
-    @keyframes pulse { from { opacity: .6; } to { opacity: 1; } }
-
-    /* Callout */
-    .tip { border-left: 3px solid var(--gold); background: rgba(242, 201, 107, .08); padding: .5rem 1.1rem; border-radius: 0 10px 10px 0; margin: 1.5rem 0; }
-    .tip p { margin: .4rem 0; }
-
-    /* Two-column helpers */
-    .split { display: grid; gap: 1.5rem; align-items: center; grid-template-columns: 1fr; }
-    @media (min-width: 52rem) { .split { grid-template-columns: 1fr 1fr; } }
-
-    /* Season filter + cards */
-    #filters { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.25rem 0 .5rem; }
-    #filters button {
-      font: 600 .9rem system-ui, sans-serif; color: var(--ink); background: transparent;
-      border: 1px solid var(--line); border-radius: 999px; padding: .5rem 1rem; cursor: pointer; min-height: 2.75rem;
-    }
-    #filters button[aria-pressed="true"] { background: var(--gold); color: #1a1405; border-color: var(--gold); }
-    .cards { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); margin-top: 1rem; padding: 0; list-style: none; }
-    .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 1.1rem 1.2rem; }
-    .card[hidden] { display: none; }
-    .season { display: inline-block; font: 600 .72rem system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin-bottom: .35rem; }
-    .card p { margin: .5rem 0 0; font-size: .96rem; }
-    .card .in { color: var(--ice); }
-
-    /* Table */
-    .scroll { overflow-x: auto; }
-    table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: .95rem; margin: 1rem 0; }
-    th, td { text-align: left; padding: .65rem .8rem; border-bottom: 1px solid var(--line); vertical-align: top; }
-    th { color: var(--gold); font-weight: 600; }
-
-    ol.steps { padding-left: 1.2rem; }
-    ol.steps li { margin: .6rem 0; }
-
-    details { border-bottom: 1px solid var(--line); padding: .8rem 0; }
-    summary { cursor: pointer; font-weight: 600; }
-
-    footer { border-top: 1px solid var(--line); margin-top: 4rem; padding: 1.75rem 0 3rem; color: var(--muted); font-size: .9rem; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <a class="skip" href="#content">Skip to main content</a>
 
-  <!-- <header>: introduces the page, holds the one <h1> -->
-  <header>
-    <div class="wrap hero">
+  <!-- Disclaimer & Improvement Banner -->
+  <aside class="notice-banner" aria-label="Site update notice">
+    <div class="wrap notice-inner">
+      <div class="notice-left">
+        <span class="notice-tag">✨ Site In Progress</span>
+        <span>We are actively expanding this guide into a multi-page sky atlas with upcoming interactive maps and celestial tools.</span>
+      </div>
+      <a class="notice-link" href="upcoming.html">See Upcoming Features &rarr;</a>
+    </div>
+  </aside>
+
+  <!-- Global Header & Navigation -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="site-logo" href="index.html" aria-label="Constellations Guide Home">
+        <span>✦</span> Constellations
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation menu">
+        ☰
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Primary site navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="seasons.html">Seasonal Sky</a></li>
+          <li><a href="star-hopping.html">Star-Hopping</a></li>
+          <li><a href="indian-astronomy.html">Indian Astronomy</a></li>
+          <li><a href="beginners-guide.html">Stargazer's Guide</a></li>
+          <li><a href="upcoming.html">Upcoming Features</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="wrap hero-grid">
       <div>
-        <p class="eyebrow">A stargazer's field guide</p>
-        <h1>Constellations for beginners: how to find your way around the night sky</h1>
+        <p class="eyebrow">A Stargazer's Field Guide</p>
+        <h1>Lost in the Stars? A Beginner’s Guide to Reading the Night Sky</h1>
         <p class="lede">The same stars that guided sailors, farmers and storytellers for thousands of years are still overhead tonight. All you need is a clear evening, a little patience and a few easy tricks to recognise them.</p>
-        <p class="byline">By Chaitra &middot; <a href="https://www.iiita.ac.in/">IIIT Allahabad</a> &middot; <time datetime="2026-11-10">10 November 2026</time></p>
+        <p class="byline">By Chaitra &middot; <a href="https://www.iiita.ac.in/">IIIT Allahabad</a> &middot; Updated <time datetime="2026-11-13">13 November 2026</time></p>
       </div>
 
-      <!-- Figure: Orion chart. SVG has a title and description so it works like ALT text -->
+      <!-- Figure: Orion chart -->
       <figure aria-labelledby="orion-cap">
         <svg class="chart" viewBox="0 0 300 320" role="img" aria-labelledby="orion-t orion-d">
           <title id="orion-t">Star chart of the constellation Orion</title>
@@ -225,264 +134,160 @@
         <figcaption id="orion-cap">Orion, the easiest winter landmark. Schematic chart, not to scale.</figcaption>
       </figure>
     </div>
-  </header>
+  </section>
 
-  <!-- <main>: the unique content of this page -->
+  <!-- Main Content Hub -->
   <main id="content">
     <div class="wrap">
+      
+      <!-- Multi-Page Exploration Hub Grid -->
+      <section aria-labelledby="hub-heading">
+        <h2 id="hub-heading">Explore the Complete Guide</h2>
+        <p class="read">Our comprehensive stargazing portal is divided into focused chapters. Choose where you would like to explore next:</p>
 
-      <nav aria-label="On this page">
-        <ul>
-          <li><a href="#what-is">What is a constellation?</a></li>
-          <li><a href="#prepare">Before you go out</a></li>
-          <li><a href="#north">Find north first</a></li>
-          <li><a href="#seasons">Sky by season</a></li>
-          <li><a href="#india">Indian star names</a></li>
-          <li><a href="#hops">Star-hopping tricks</a></li>
-          <li><a href="#faq">Questions</a></li>
-        </ul>
-      </nav>
+        <div class="hub-grid">
+          <!-- Hub Card 1: Seasonal Sky -->
+          <a class="hub-card" href="seasons.html">
+            <div class="hub-icon">🌌</div>
+            <h3>Seasonal Sky Guide</h3>
+            <p>Explore evening highlights for Winter, Spring, Summer, and Autumn. Features an interactive filter for 12 major constellations.</p>
+            <span class="hub-cta">Explore Seasons &rarr;</span>
+          </a>
 
-      <article class="read">
+          <!-- Hub Card 2: Star-Hopping -->
+          <a class="hub-card" href="star-hopping.html">
+            <div class="hub-icon">🧭</div>
+            <h3>Star-Hopping Tricks</h3>
+            <p>Master the ancient navigational art of using bright beacon stars, hand measurements, and the Big Dipper to pinpoint Polaris and Sirius.</p>
+            <span class="hub-cta">Learn Star-Hopping &rarr;</span>
+          </a>
 
-        <section id="what-is">
-          <h2>What is a constellation, really?</h2>
-          <p>A constellation is a patch of the sky that people have grouped together and named, often after a hero, an animal or an object. Today the International Astronomical Union recognises <strong>88 official constellations</strong>, which together cover the whole sky like countries on a map.</p>
-          <p>Two things surprise most beginners. First, the stars in a constellation are usually <em>not</em> close to each other. They only line up from our point of view, and some are hundreds of light-years closer to us than their neighbours. Second, a famous pattern is not always a constellation. The Big Dipper is an <strong>asterism</strong>, a recognisable shape that is part of the larger constellation Ursa Major.</p>
-          <p>The stories change with the culture. The seven bright stars that many people call the Plough or the Big Dipper are the <em>Saptarishi</em>, the seven sages, in Indian tradition. Same stars, different story.</p>
-        </section>
+          <!-- Hub Card 3: Indian Astronomy -->
+          <a class="hub-card" href="indian-astronomy.html">
+            <div class="hub-icon">🕉️</div>
+            <h3>Indian Astronomy & Nakshatras</h3>
+            <p>Connect Western constellations to the 27 Vedic Nakshatras, the Saptarishi, Dhruva, and ancient Indian astronomical heritage.</p>
+            <span class="hub-cta">View Indian Star Lore &rarr;</span>
+          </a>
 
-        <section id="prepare">
-          <h2>Before you go out</h2>
-          <ul>
-            <li><strong>Give your eyes time.</strong> Night vision takes about 20 to 30 minutes to develop fully. A single glance at a bright phone screen resets much of it.</li>
-            <li><strong>Use a red light.</strong> A torch covered in red cellophane, or a phone in a dark red mode, protects your night vision while you read a chart.</li>
-            <li><strong>Escape the glare.</strong> Move away from street lights and bright windows. A rooftop or open ground, even a short distance from town, shows far more stars.</li>
-            <li><strong>Check the Moon.</strong> A bright Moon washes out faint stars. The nights around the new Moon are best for deep, dark skies.</li>
-            <li><strong>Binoculars beat nothing, and nothing beats patience.</strong> You do not need a telescope. An ordinary pair of binoculars reveals star clusters and the Moon's craters.</li>
-          </ul>
-        </section>
+          <!-- Hub Card 4: Stargazer's Field Guide -->
+          <a class="hub-card" href="beginners-guide.html">
+            <div class="hub-icon">🔭</div>
+            <h3>Field Guide & FAQ</h3>
+            <p>Dark adaptation chemistry, red torch etiquette, the Bortle light pollution scale, binoculars advice, and essential beginner answers.</p>
+            <span class="hub-cta">Read Field Manual &rarr;</span>
+          </a>
 
-        <section id="north">
-          <h2>Find north first</h2>
-          <p>Everything else is easier once you know where north is. The trick is <strong>Polaris</strong>, the North Star, which sits almost exactly above Earth's north pole, so it barely moves while the rest of the sky turns around it. In India it is known as <em>Dhruva</em>, the steady one. It is not especially bright, but it is easy to find:</p>
-        </section>
-      </article>
-
-      <div class="split">
-        <figure aria-labelledby="dipper-cap">
-          <svg class="chart" viewBox="0 0 300 250" role="img" aria-labelledby="dip-t dip-d">
-            <title id="dip-t">Using the Big Dipper to find Polaris</title>
-            <desc id="dip-d">The seven stars of the Big Dipper, with a dashed line running from the two pointer stars, Merak and Dubhe, upward to Polaris, about five times the gap between them.</desc>
-            <path class="ln" d="M146 125 L205 112 L205 165 L150 172 Z"/>
-            <path class="ln" d="M146 125 L100 100 L58 112 L18 150"/>
-            <path class="ln dash" d="M205 165 L205 32"/>
-            <circle class="st tw" cx="205" cy="112" r="4.4"/>
-            <circle class="st tw" cx="205" cy="165" r="4.4"/>
-            <circle class="st tw" cx="150" cy="172" r="4"/>
-            <circle class="st tw" cx="146" cy="125" r="3.4"/>
-            <circle class="st tw" cx="100" cy="100" r="4.4"/>
-            <circle class="st tw" cx="58" cy="112" r="4"/>
-            <circle class="st tw" cx="18" cy="150" r="4"/>
-            <circle class="tw" cx="205" cy="30" r="4.6" fill="var(--gold)"/>
-            <text class="lab hi" x="216" y="34">Polaris</text>
-            <text class="lab" x="216" y="116">Dubhe</text>
-            <text class="lab" x="216" y="170">Merak</text>
-            <text class="lab" x="108" y="94">Alioth</text>
-            <text class="lab" x="40" y="104">Mizar</text>
-            <text class="lab" x="216" y="75" fill="var(--gold)">5 &times; the gap</text>
-          </svg>
-          <figcaption id="dipper-cap">The two "pointer" stars of the Big Dipper lead to Polaris. Schematic, not to scale.</figcaption>
-        </figure>
-
-        <div>
-          <ol class="steps">
-            <li>Find the Big Dipper, seven stars shaped like a ladle or a plough.</li>
-            <li>Take the two stars on the outer edge of the bowl, Merak and Dubhe.</li>
-            <li>Draw a line through them, away from the bowl, and follow it for about five times the gap between them.</li>
-            <li>The moderately bright star you land on is Polaris. Face it and you are looking north.</li>
-          </ol>
-          <div class="tip">
-            <p><strong>A useful fact:</strong> the height of Polaris above the horizon roughly equals your latitude. From northern India, around 25&deg; north, it sits low, about a fist and a half above the northern horizon.</p>
-          </div>
+          <!-- Hub Card 5: Upcoming Features -->
+          <a class="hub-card" href="upcoming.html">
+            <div class="hub-icon">🚀</div>
+            <h3>Upcoming Features & Roadmap</h3>
+            <p>Track our site improvements, preview the 2026-2027 meteor shower calendar, and vote on upcoming interactive sky tools.</p>
+            <span class="hub-cta">Explore Roadmap &rarr;</span>
+          </a>
         </div>
-      </div>
-
-      <section id="seasons">
-        <h2>The sky by season</h2>
-        <p class="read">Because Earth orbits the Sun, the part of the sky that faces us after dark slowly changes through the year. These are the evening highlights for the northern hemisphere, so they work well from India. Use the buttons to filter by season.</p>
-        <div id="filters" role="group" aria-label="Filter constellations by season"></div>
-        <p id="count" class="read" aria-live="polite" style="font-size:.9rem;color:var(--muted)"></p>
-
-        <ul class="cards" id="cards">
-          <li class="card" data-season="Winter">
-            <span class="season">Winter</span>
-            <h3>Orion</h3>
-            <p>Look for three bright stars in a short, straight row: Orion's belt. Reddish Betelgeuse and blue-white Rigel mark a shoulder and a foot. The fuzzy glow below the belt is the Orion Nebula, a stellar nursery you can spot without a telescope.</p>
-            <p class="in">In Indian tradition, the stars of Orion's head form Mrigashira, and Betelgeuse is Ardra.</p>
-          </li>
-          <li class="card" data-season="Winter">
-            <span class="season">Winter</span>
-            <h3>Taurus</h3>
-            <p>Follow the belt up and to the right to orange Aldebaran, the glowing eye of the bull. Just beyond is the Pleiades, a tiny cluster that most people see as six or seven soft stars.</p>
-            <p class="in">The Pleiades are Krittika and Aldebaran is Rohini, both among the 27 nakshatras, the traditional lunar mansions.</p>
-          </li>
-          <li class="card" data-season="Winter">
-            <span class="season">Winter</span>
-            <h3>Canis Major</h3>
-            <p>Follow the belt down and to the left to <strong>Sirius</strong>, the brightest star in the whole night sky. It often twinkles in flashes of colour when it is low.</p>
-            <p class="in">Sirius is Mrigavyadha, the hunter who aims at the deer.</p>
-          </li>
-          <li class="card" data-season="Spring">
-            <span class="season">Spring</span>
-            <h3>Ursa Major</h3>
-            <p>The Big Dipper rides high on spring evenings. Look closely at the middle star of the handle, Mizar. A fainter star beside it, Alcor, has long been used as an eyesight test.</p>
-            <p class="in">The seven stars are the Saptarishi. Mizar and Alcor are the sage Vasishtha and his wife Arundhati.</p>
-          </li>
-          <li class="card" data-season="Spring">
-            <span class="season">Spring</span>
-            <h3>Leo</h3>
-            <p>Find a backwards question mark, the "Sickle", with bright Regulus at its base. A triangle of stars to the east forms the lion's hindquarters.</p>
-            <p class="in">Regulus corresponds to Magha, another of the nakshatras.</p>
-          </li>
-          <li class="card" data-season="Summer">
-            <span class="season">Summer</span>
-            <h3>Scorpius</h3>
-            <p>A curved tail with a hooked stinger, and red Antares at its heart. From northern India it hangs low in the south, so you need a clear horizon.</p>
-            <p class="in">Antares is Jyeshtha, "the eldest".</p>
-          </li>
-          <li class="card" data-season="Summer">
-            <span class="season">Summer</span>
-            <h3>Cygnus and the Summer Triangle</h3>
-            <p>Cygnus is a great cross flying along the Milky Way, with Deneb at its tail. Deneb, Vega and Altair together form the Summer Triangle, an easy shape to spot overhead.</p>
-            <p class="in">Vega is Abhijit and Altair is Shravana.</p>
-          </li>
-          <li class="card" data-season="Autumn">
-            <span class="season">Autumn</span>
-            <h3>Cassiopeia and Andromeda</h3>
-            <p>Cassiopeia is a bold "W" (or "M") high in the north. From the Great Square of Pegasus, hop along Andromeda to a faint smudge: the Andromeda Galaxy, about 2.5 million light-years away and one of the most distant things you can see with your own eyes.</p>
-          </li>
-        </ul>
       </section>
 
-      <div class="split">
-        <figure aria-labelledby="cas-cap">
-          <svg class="chart" viewBox="0 0 300 160" role="img" aria-labelledby="cas-t cas-d">
-            <title id="cas-t">Star chart of Cassiopeia</title>
-            <desc id="cas-d">Five stars joined in a zigzag that forms the letter W, labelled Caph, Schedar, Gamma Cassiopeiae, Ruchbah and Segin.</desc>
-            <path class="ln" d="M30 70 L85 112 L140 70 L195 108 L255 58"/>
-            <circle class="st tw" cx="30" cy="70" r="4.2"/>
-            <circle class="st tw" cx="85" cy="112" r="4.4"/>
-            <circle class="st tw" cx="140" cy="70" r="4.6"/>
-            <circle class="st tw" cx="195" cy="108" r="3.8"/>
-            <circle class="st tw" cx="255" cy="58" r="3.4"/>
-            <text class="lab" x="30" y="56" text-anchor="middle">Caph</text>
-            <text class="lab hi" x="85" y="136" text-anchor="middle">Schedar</text>
-            <text class="lab" x="140" y="54" text-anchor="middle">Gamma</text>
-            <text class="lab" x="195" y="132" text-anchor="middle">Ruchbah</text>
-            <text class="lab" x="255" y="44" text-anchor="middle">Segin</text>
-          </svg>
-          <figcaption id="cas-cap">Cassiopeia, the "W" in the northern sky. Schematic, not to scale.</figcaption>
-        </figure>
-        <p>Cassiopeia and the Big Dipper circle Polaris on opposite sides, like two children on a seesaw. When one is low, the other is high, so on almost any clear night one of them can help you find north.</p>
-      </div>
-
-      <article class="read">
-        <section id="india">
-          <h2>The sky through Indian eyes</h2>
-          <p>Indian astronomy divides the Moon's path into 27 nakshatras, each tied to a star or small group of stars. Many familiar western names have matching Indian ones. Traditions and spellings vary by region and text, so treat this as a friendly guide rather than a rulebook.</p>
-          <div class="scroll">
-            <table>
-              <caption class="skip">Western and Indian names for bright stars and patterns</caption>
-              <thead>
-                <tr><th scope="col">Western name</th><th scope="col">Indian name</th><th scope="col">Where to look</th></tr>
-              </thead>
-              <tbody>
-                <tr><td>Big Dipper (Ursa Major)</td><td>Saptarishi</td><td>Northern sky, high in spring</td></tr>
-                <tr><td>Polaris</td><td>Dhruva</td><td>Due north, low from India</td></tr>
-                <tr><td>Pleiades</td><td>Krittika</td><td>Winter evenings, in Taurus</td></tr>
-                <tr><td>Aldebaran</td><td>Rohini</td><td>Orange star in Taurus</td></tr>
-                <tr><td>Betelgeuse</td><td>Ardra</td><td>Orion's red shoulder</td></tr>
-                <tr><td>Sirius</td><td>Mrigavyadha</td><td>Down and left of Orion's belt</td></tr>
-                <tr><td>Regulus</td><td>Magha</td><td>Base of Leo's Sickle</td></tr>
-                <tr><td>Antares</td><td>Jyeshtha</td><td>Red heart of Scorpius</td></tr>
-                <tr><td>Vega, Altair</td><td>Abhijit, Shravana</td><td>Summer Triangle</td></tr>
-              </tbody>
-            </table>
-          </div>
+      <!-- Foundational Knowledge Section -->
+      <article class="read" style="margin-top: 3.5rem;">
+        <section id="what-is">
+          <h2>What is a constellation, really?</h2>
+          <p>A constellation is a patch of the sky that people have grouped together and named, often after a hero, an animal or an object. Today the International Astronomical Union (IAU) recognises <strong>88 official constellations</strong>, which together cover the whole sky like countries on a celestial map.</p>
+          <p>Two things surprise most beginners:</p>
+          <ul>
+            <li><strong>Stars are not neighbours:</strong> The stars in a constellation are usually <em>not</em> close to each other in physical space. They only align from our perspective on Earth; some are hundreds of light-years closer to us than their visual neighbours.</li>
+            <li><strong>Asterisms are not constellations:</strong> A famous pattern is not always an official constellation. The Big Dipper is an <strong>asterism</strong>—a recognizable shape that is merely a component of the larger constellation Ursa Major.</li>
+          </ul>
+          <p>Stories also change across cultures. The seven bright stars that Western traditions call the Big Dipper or the Plough are revered as the <em>Saptarishi</em> (the seven venerable sages) in Indian astronomy. Same radiant stars, different cultural story.</p>
         </section>
 
-        <section id="hops">
-          <h2>Four star-hopping tricks</h2>
+        <!-- Stargazing Checklist -->
+        <section id="quick-start" style="margin-top: 3rem;">
+          <h2>Tonight's Quick-Start Checklist</h2>
+          <p>Ready to look up tonight? Keep these four ground rules in mind:</p>
           <ol class="steps">
-            <li><strong>Belt to Sirius.</strong> Extend Orion's belt down and to the left to reach the brightest star in the sky.</li>
-            <li><strong>Belt to the Pleiades.</strong> Extend the belt the other way, up and to the right, through Aldebaran and on to the Pleiades.</li>
-            <li><strong>Dipper to Polaris.</strong> Use the two pointer stars as shown above.</li>
-            <li><strong>Dipper's handle to Spica.</strong> In spring, follow the curve of the handle ("arc to Arcturus") then speed on to Spica, a bright blue-white star in Virgo.</li>
+            <li><strong>Give your eyes 20 minutes:</strong> It takes 20 to 30 minutes in darkness for your pupils to expand and your rod cells to produce rhodopsin for deep night vision.</li>
+            <li><strong>Ditch white flashlights:</strong> Use a red LED or wrap red cellophane around your torch so you don't ruin your dark adaptation.</li>
+            <li><strong>Escape artificial glow:</strong> Step away from streetlights or climb to a terrace roof away from glaring building facades.</li>
+            <li><strong>Look for Polaris first:</strong> Face North to establish your bearings before hopping to other constellations.</li>
           </ol>
-          <p>Free tools make practice easier. <a href="https://stellarium-web.org/">Stellarium Web</a> shows a live sky chart for your location, and the <a href="https://nightsky.jpl.nasa.gov/">NASA Night Sky Network</a> lists stargazing events and guides.</p>
+          <p><a class="btn" href="star-hopping.html">Step-by-Step Star-Hopping Guide &rarr;</a></p>
         </section>
 
-        <section id="faq">
-          <h2>Questions beginners ask</h2>
+        <!-- Preview FAQ -->
+        <section id="faq-preview" style="margin-top: 3rem;">
+          <h2>Quick Answers for Beginners</h2>
           <details>
-            <summary>Why do constellations change with the seasons?</summary>
-            <p>Earth orbits the Sun, so the direction our night side faces slowly shifts. In winter evenings we look out toward Orion; in summer evenings, toward Scorpius and the centre of the Milky Way.</p>
-          </details>
-          <details>
-            <summary>Are the stars in a constellation close together?</summary>
-            <p>Usually not. They just line up in our view. One star in a pattern may be tens or hundreds of light-years farther away than its neighbour.</p>
-          </details>
-          <details>
-            <summary>Why do stars twinkle but planets usually don't?</summary>
-            <p>Starlight is a single point that Earth's moving air bends and flickers. A planet appears as a tiny disc, so the flickers average out and it shines steadier.</p>
+            <summary>Why do constellations change throughout the year?</summary>
+            <p>Earth orbits the Sun, which means the night side of our planet points towards different areas of space each month. In winter evenings we look toward Orion; in summer evenings, toward Scorpius and the core of our galaxy.</p>
           </details>
           <details>
             <summary>Which star is the brightest?</summary>
-            <p>Sirius is the brightest star in the night sky. Planets such as Venus and Jupiter can outshine it, but they are not stars.</p>
+            <p>Sirius (in Canis Major) is the brightest star in the night sky. While planets like Venus and Jupiter often outshine it, they are not stars.</p>
           </details>
           <details>
-            <summary>Do I need a telescope?</summary>
-            <p>No. Every constellation on this page is visible with the naked eye. Binoculars are a cheap, rewarding upgrade.</p>
+            <summary>Do I need to buy a telescope right away?</summary>
+            <p>No. Every major constellation and star hop on this site is easily visible with the naked eye. Binoculars are the ideal first step.</p>
           </details>
+          <p style="margin-top: 1rem;"><a href="beginners-guide.html">See all questions & fieldcraft tips in the Beginner's Guide &rarr;</a></p>
         </section>
+
+        <!-- Improvement & Roadmap Callout -->
+        <div class="tip info" style="margin-top: 3rem;">
+          <p><strong>Site Modernization Notice:</strong> We are continuously adding new features, including upcoming interactive HTML5 sky charts, moon phase calculators, and downloadable star maps. <a href="upcoming.html">See what features are coming next or vote for what you want built! &rarr;</a></p>
+        </div>
       </article>
 
     </div>
   </main>
 
+  <!-- Site Footer -->
   <footer>
     <div class="wrap">
-      <p>Written by Chaitra as a Digital Marketing course practical at <a href="https://www.iiita.ac.in/">Indian Institute of Information Technology, Allahabad</a>. Star charts are simplified schematics, not accurate sky maps.</p>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>About This Project</h4>
+          <p>An accessible astronomical guide built by Chaitra for the Digital Marketing practical at <a href="https://www.iiita.ac.in/">IIIT Allahabad</a>. Designed for zero-bloat speed, high contrast, and educational discovery.</p>
+          <p><span class="notice-tag">Notice</span> Site under active enhancement. <a href="upcoming.html">Read our roadmap</a>.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="seasons.html">Seasonal Sky</a></li>
+            <li><a href="star-hopping.html">Star-Hopping Tricks</a></li>
+            <li><a href="indian-astronomy.html">Indian Astronomy</a></li>
+            <li><a href="beginners-guide.html">Stargazer's Field Guide</a></li>
+            <li><a href="upcoming.html">Upcoming Features</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="https://stellarium-web.org/" target="_blank" rel="noopener">Stellarium Sky Map</a></li>
+            <li><a href="https://nightsky.jpl.nasa.gov/" target="_blank" rel="noopener">NASA Night Sky</a></li>
+            <li><a href="sitemap.xml">XML Sitemap</a></li>
+            <li><a href="robots.txt">Robots.txt</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Chaitra &middot; IIIT Allahabad. Star charts are simplified schematics, not accurate sky maps.</p>
+        <p><a href="#content">Back to top &uarr;</a></p>
+      </div>
     </div>
   </footer>
 
   <script>
-    /* Progressive enhancement: the season filter appears only if JavaScript runs.
-       Without JavaScript, all constellation cards stay visible. */
-    (function () {
-      var bar = document.getElementById('filters');
-      var cards = Array.prototype.slice.call(document.querySelectorAll('#cards .card'));
-      var count = document.getElementById('count');
-      if (!bar || !cards.length) return;
-      ['All', 'Winter', 'Spring', 'Summer', 'Autumn'].forEach(function (name, i) {
-        var b = document.createElement('button');
-        b.type = 'button';
-        b.textContent = name;
-        b.setAttribute('aria-pressed', i === 0 ? 'true' : 'false');
-        b.addEventListener('click', function () {
-          Array.prototype.forEach.call(bar.children, function (x) { x.setAttribute('aria-pressed', 'false'); });
-          b.setAttribute('aria-pressed', 'true');
-          var shown = 0;
-          cards.forEach(function (c) {
-            var show = name === 'All' || c.getAttribute('data-season') === name;
-            c.hidden = !show;
-            if (show) shown++;
-          });
-          count.textContent = 'Showing ' + shown + (shown === 1 ? ' constellation' : ' constellations') + (name === 'All' ? '' : ' for ' + name.toLowerCase() + ' evenings') + '.';
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (toggle && nav) {
+        toggle.addEventListener('click', function() {
+          var open = nav.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
         });
-        bar.appendChild(b);
-      });
+      }
     })();
   </script>
 </body>
