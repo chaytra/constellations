@@ -62,10 +62,10 @@
   <aside class="notice-banner" aria-label="Site update notice">
     <div class="wrap notice-inner">
       <div class="notice-left">
-        <span class="notice-tag">✨ Site In Progress</span>
-        <span>We are actively expanding this guide into a multi-page sky atlas with upcoming interactive maps and celestial tools.</span>
+        <span class="notice-tag">✨ New</span>
+        <span>New: a live sky calendar &amp; night planner for your city.</span>
       </div>
-      <a class="notice-link" href="upcoming.html">See Upcoming Features &rarr;</a>
+      <a class="notice-link" href="sky-calendar.html">Open the Sky Calendar &rarr;</a>
     </div>
   </aside>
 
@@ -84,8 +84,10 @@
           <li><a href="seasons.html">Seasonal Sky</a></li>
           <li><a href="star-hopping.html">Star-Hopping</a></li>
           <li><a href="indian-astronomy.html">Indian Astronomy</a></li>
+          <li><a href="sky-calendar.html">Sky Calendar</a></li>
+          <li><a href="celestial-temples.html">Sky Temples</a></li>
           <li><a href="beginners-guide.html">Stargazer's Guide</a></li>
-          <li><a href="upcoming.html">Upcoming Features</a></li>
+          <li><a href="upcoming.html">Roadmap</a></li>
         </ul>
       </nav>
     </div>
@@ -170,6 +172,22 @@
             <span class="hub-cta">View Indian Star Lore &rarr;</span>
           </a>
 
+          <!-- Hub Card: Live Sky Calendar -->
+          <a class="hub-card" href="sky-calendar.html">
+            <div class="hub-icon">📅</div>
+            <h3>Live Sky Calendar</h3>
+            <p>Moon phases, eclipses, meteor showers, planets and Sankrantis for your city, with a night plan matched to your light pollution.</p>
+            <span class="hub-cta">Open the Calendar &rarr;</span>
+          </a>
+
+          <!-- Hub Card: Celestial Temples -->
+          <a class="hub-card" href="celestial-temples.html">
+            <div class="hub-icon">🛕</div>
+            <h3>Celestial Temples of India</h3>
+            <p>The nine Navagraha temples and the Sun temples of Konark, Modhera and Sringeri, linked to what you can see in the sky.</p>
+            <span class="hub-cta">Explore the Temples &rarr;</span>
+          </a>
+
           <!-- Hub Card 4: Stargazer's Field Guide -->
           <a class="hub-card" href="beginners-guide.html">
             <div class="hub-icon">🔭</div>
@@ -186,6 +204,15 @@
             <span class="hub-cta">Explore Roadmap &rarr;</span>
           </a>
         </div>
+      </section>
+
+      <!-- Tonight from your city: loads the astronomy library only when scrolled near -->
+      <section class="sky-widget" id="tonight" aria-labelledby="tonight-h">
+        <p class="eyebrow">Live &middot; calculated in your browser</p>
+        <h2 id="tonight-h">Tonight from your city</h2>
+        <div class="sky-loc"><p>Pick your city or use your location to see tonight's darkest hours, the Moon's phase and Nakshatra, and which planets are up.</p></div>
+        <div class="sky-tonight" aria-live="polite"><noscript><p>This live widget needs JavaScript.</p></noscript></div>
+        <p><a class="btn" href="sky-calendar.html">Open the full Sky Calendar &rarr;</a></p>
       </section>
 
       <!-- Foundational Knowledge Section -->
@@ -257,6 +284,8 @@
             <li><a href="seasons.html">Seasonal Sky</a></li>
             <li><a href="star-hopping.html">Star-Hopping Tricks</a></li>
             <li><a href="indian-astronomy.html">Indian Astronomy</a></li>
+            <li><a href="sky-calendar.html">Live Sky Calendar</a></li>
+            <li><a href="celestial-temples.html">Celestial Temples</a></li>
             <li><a href="beginners-guide.html">Stargazer's Field Guide</a></li>
             <li><a href="upcoming.html">Upcoming Features</a></li>
           </ul>
@@ -288,6 +317,24 @@
           toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
         });
       }
+      // "Tonight" widget: fetch the astronomy scripts only when the section nears the viewport,
+      // so the home page's first paint stays as light as before.
+      var box = document.getElementById('tonight'), loaded = false;
+      function load() {
+        if (loaded || !box) return; loaded = true;
+        ['js/astronomy.browser.min.js', 'js/sky-core.js'].forEach(function (src, i) {
+          var s = document.createElement('script');
+          s.src = src; s.async = false;
+          if (i === 1) s.onload = function () { window.SkyCore.widget(box); };
+          document.body.appendChild(s);
+        });
+      }
+      if (box && 'IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (e) {
+          if (e[0].isIntersecting) { io.disconnect(); load(); }
+        }, { rootMargin: '300px' });
+        io.observe(box);
+      } else { window.addEventListener('load', load); }
     })();
   </script>
 </body>
