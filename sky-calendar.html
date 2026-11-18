@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO: title & meta description -->
+  <title>Live Sky Calendar India 2026–27: Moon Phases, Eclipses & Meteor Showers</title>
+  <meta name="description" content="Live celestial events calendar for India: moon phases, eclipses, meteor showers, planet visibility and a light-pollution-aware night plan for your city.">
+
+  <!-- SEO: Canonical URL -->
+  <link rel="canonical" href="https://chaytra.github.io/constellations/sky-calendar.html">
+
+  <meta name="author" content="Chaitra">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#060a1a">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Live Sky Calendar & Night Planner for India">
+  <meta property="og:description" content="Moon phases, eclipses, meteor showers, planets and a Bortle-aware night plan for your city, calculated in your browser.">
+  <meta property="og:url" content="https://chaytra.github.io/constellations/sky-calendar.html">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Live Sky Calendar & Night Planner for India">
+  <meta name="twitter:description" content="Moon phases, eclipses, meteor showers, planets and a Bortle-aware night plan for your city.">
+
+  <!-- Structured Data: WebApplication & Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://chaytra.github.io/constellations/" },
+          { "@type": "ListItem", "position": 2, "name": "Sky Calendar", "item": "https://chaytra.github.io/constellations/sky-calendar.html" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "Live Sky Calendar & Night Planner for India",
+        "url": "https://chaytra.github.io/constellations/sky-calendar.html",
+        "description": "Browser-based calendar of moon phases, eclipses, meteor showers, planet oppositions, Sankrantis and Nakshatras, with a light-pollution-aware night plan for Indian cities.",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Any",
+        "inLanguage": "en",
+        "offers": { "@type": "Offer", "price": 0, "priceCurrency": "INR" },
+        "author": { "@type": "Person", "name": "Chaitra" }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+  <noscript><style>#skyApp { display: none; }</style></noscript>
+</head>
+
+<body>
+  <a class="skip" href="#content">Skip to main content</a>
+
+  <!-- Disclaimer & Improvement Banner -->
+  <aside class="notice-banner" aria-label="Site update notice">
+    <div class="wrap notice-inner">
+      <div class="notice-left">
+        <span class="notice-tag">✨ New</span>
+        <span>New: a live sky calendar &amp; night planner for your city.</span>
+      </div>
+      <a class="notice-link" href="sky-calendar.html">Open the Sky Calendar &rarr;</a>
+    </div>
+  </aside>
+
+  <!-- Global Header & Navigation -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="site-logo" href="index.html" aria-label="Constellations Guide Home">
+        <span>✦</span> Constellations
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation menu">
+        ☰
+      </button>
+      <nav class="main-nav" id="mainNav" aria-label="Primary site navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="seasons.html">Seasonal Sky</a></li>
+          <li><a href="star-hopping.html">Star-Hopping</a></li>
+          <li><a href="indian-astronomy.html">Indian Astronomy</a></li>
+          <li><a href="sky-calendar.html" aria-current="page">Sky Calendar</a></li>
+          <li><a href="celestial-temples.html">Sky Temples</a></li>
+          <li><a href="beginners-guide.html">Stargazer's Guide</a></li>
+          <li><a href="upcoming.html">Roadmap</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <div class="wrap">
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumbs">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Sky Calendar</li>
+        </ol>
+      </nav>
+
+      <section class="page-hero">
+        <p class="eyebrow">Live Celestial Events</p>
+        <h1>Live Sky Calendar &amp; Night Planner for India</h1>
+        <p class="lede">See moon phases, eclipses, meteor showers, planets, Sankrantis and tonight's darkest hours for your own city, calculated live in your browser.</p>
+        <p class="byline">By Chaitra &middot; <a href="https://www.iiita.ac.in/">IIIT Allahabad</a> &middot; Updated <time datetime="2026-11-18">18 November 2026</time></p>
+      </section>
+
+      <noscript>
+        <p class="tip info">The live calendar needs JavaScript. The guide below still explains how it works.</p>
+      </noscript>
+
+      <div id="skyApp">
+        <section aria-labelledby="loc-h">
+          <h2 id="loc-h">Your location</h2>
+          <div class="sky-loc" id="skyLoc"><p id="skyLoading">Loading the sky for your city&hellip;</p></div>
+        </section>
+
+        <section aria-labelledby="tonight-h">
+          <h2 id="tonight-h">Tonight's plan</h2>
+          <div class="card sky-plan" id="tonightPlan" aria-live="polite"></div>
+        </section>
+
+        <section aria-labelledby="cal-h">
+          <h2 id="cal-h">Month calendar</h2>
+          <div class="cal-head">
+            <button type="button" class="chip" id="calPrev" aria-label="Previous month">&lsaquo; Prev</button>
+            <h3 id="calTitle" aria-live="polite">&nbsp;</h3>
+            <button type="button" class="chip" id="calNext" aria-label="Next month">Next &rsaquo;</button>
+            <button type="button" class="chip" id="calToday">Today</button>
+          </div>
+          <div class="cal-grid" id="calGrid" role="group" aria-labelledby="calTitle"></div>
+          <p class="sky-small">Tip: use the arrow keys to move between days. 🛕 chips link to the temples traditionally associated with that sky event.</p>
+          <div class="card day-panel" id="dayPanel" aria-live="polite"></div>
+        </section>
+
+        <section aria-labelledby="up-h">
+          <h2 id="up-h">Upcoming in the next 60 days</h2>
+          <ul class="sky-list" id="upcomingList"></ul>
+        </section>
+      </div>
+
+      <article class="read">
+        <section>
+          <h2>How this calendar works</h2>
+          <p>Every date and time on this page is calculated in your own browser with the open-source <a href="https://github.com/cosinekitty/astronomy" target="_blank" rel="noopener">Astronomy Engine</a> library. Nothing is sent to a server. For the location you choose, it finds the four Moon phases (including Amavasya and Purnima), equinoxes and solstices, lunar and solar eclipses, oppositions of Mars, Jupiter and Saturn, and the greatest elongations of Mercury and Venus. It also works out sunrise, sunset, astronomical twilight and moonrise for any day you click. Tonight's plan combines these to find the darkest stretch of the night and the planets that are well above the horizon.</p>
+        </section>
+        <section>
+          <h2>Light pollution &amp; the Bortle scale</h2>
+          <p>The Bortle scale rates how dark a sky is, from 1 (a pristine desert or mountain sky) to 9 (an inner-city sky). Most Indian city centres sit around Bortle 8, where only the Moon, planets and the brightest stars show. Move to a village or a remote hill site and the Milky Way appears. Choose your surroundings above, or enter your own Bortle class, and the planner will only promise what your sky can really show. Learn how to read your sky in the <a href="beginners-guide.html">Stargazer's Field Guide</a>.</p>
+        </section>
+        <section>
+          <h2>Nakshatras &amp; Sankranti</h2>
+          <p>Indian calendars track the Moon through 27 <a href="indian-astronomy.html">Nakshatras</a> of 13&deg;20' each, and mark a Sankranti whenever the Sun moves into a new sidereal rāśi (sign). This page measures longitudes against the stars using an approximate Lahiri ayanamsa, so the Nakshatra and Sankranti dates match traditional panchangs to within about a day. Makar Sankranti, when the Sun enters Makara in mid-January, is the best known. These are cultural and calendrical markers. The page makes no astrological predictions.</p>
+        </section>
+        <p class="tip info">Times are calculated in your browser with Astronomy Engine (accuracy ≈ 1 arc-minute) and shown in your device's time zone. Meteor shower peaks are approximate (IMO).</p>
+      </article>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>About This Project</h4>
+          <p>An accessible astronomical guide built by Chaitra for the Digital Marketing practical at <a href="https://www.iiita.ac.in/">IIIT Allahabad</a>. Designed for zero-bloat speed, high contrast, and educational discovery.</p>
+          <p><span class="notice-tag">Notice</span> Site under active enhancement. <a href="upcoming.html">Read our roadmap</a>.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="seasons.html">Seasonal Sky</a></li>
+            <li><a href="star-hopping.html">Star-Hopping Tricks</a></li>
+            <li><a href="indian-astronomy.html">Indian Astronomy</a></li>
+            <li><a href="sky-calendar.html">Live Sky Calendar</a></li>
+            <li><a href="celestial-temples.html">Celestial Temples</a></li>
+            <li><a href="beginners-guide.html">Stargazer's Field Guide</a></li>
+            <li><a href="upcoming.html">Upcoming Features</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="https://stellarium-web.org/" target="_blank" rel="noopener">Stellarium Sky Map</a></li>
+            <li><a href="https://nightsky.jpl.nasa.gov/" target="_blank" rel="noopener">NASA Night Sky</a></li>
+            <li><a href="sitemap.xml">XML Sitemap</a></li>
+            <li><a href="robots.txt">Robots.txt</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Chaitra &middot; IIIT Allahabad. Star charts are simplified schematics.</p>
+        <p><a href="#content">Back to top &uarr;</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (toggle && nav) {
+        toggle.addEventListener('click', function() {
+          var open = nav.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+      }
+    })();
+  </script>
+  <script src="js/astronomy.browser.min.js" defer></script>
+  <script src="js/sky-core.js" defer></script>
+  <script src="js/sky-calendar.js" defer></script>
+</body>
+</html>
